@@ -109,6 +109,13 @@
             bindings = <&kp LG(ENTER)>;
             label = "MAC_CMD_ENTER";
         };
+
+        mac_cmd_slash: mac_cmd_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SLASH)>;
+            label = "MAC_CMD_SLASH";
+        };
     };
 
     keymap {
