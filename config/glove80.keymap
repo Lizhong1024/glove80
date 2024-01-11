@@ -116,6 +116,13 @@
             bindings = <&kp LG(SLASH)>;
             label = "MAC_CMD_SLASH";
         };
+
+        mac_save: mac_save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(S)>;
+            label = "MAC_SAVE";
+        };
     };
 
     keymap {
