@@ -123,6 +123,27 @@
             bindings = <&kp LG(S)>;
             label = "MAC_SAVE";
         };
+
+        mac_line_start: mac_line_start {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LEFT)>;
+            label = "MAC_LINE_START";
+        };
+
+        mac_line_end: mac_line_end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(RIGHT)>;
+            label = "MAC_LINE_END";
+        };
+
+        mac_select_next: mac_select_next {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(RIGHT))>;
+            label = "MAC_SELECT_NEXT";
+        };
     };
 
     keymap {
