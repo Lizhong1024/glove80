@@ -144,6 +144,20 @@
             bindings = <&kp LS(LA(RIGHT))>;
             label = "MAC_SELECT_NEXT";
         };
+
+        jupyter_run_cell: jupyter_run_cell {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RS(ENTER)>;
+            label = "JUPYTER_RUN_CELL";
+        };
+
+        mac_bold: mac_bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(B)>;
+            label = "MAC_BOLD";
+        };
     };
 
     keymap {
