@@ -158,6 +158,13 @@
             bindings = <&kp LG(B)>;
             label = "MAC_BOLD";
         };
+
+        mac_select_prev: mac_select_prev {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LEFT))>;
+            label = "MAC_SELECT_PREV";
+        };
     };
 
     keymap {
